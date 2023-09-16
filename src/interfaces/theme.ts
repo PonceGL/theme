@@ -19,6 +19,10 @@ export interface ColorsTheme {
   tooltip: ColorValue;
 }
 
+export interface Theme {
+  colors: ColorsTheme;
+}
+
 export interface OptionsTheme {
   colors?: Partial<ColorsTheme>;
 }

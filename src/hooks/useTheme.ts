@@ -1,6 +1,8 @@
+import {useContext, useRef} from 'react';
 import {useColorScheme} from 'react-native';
 
-import {ColorsTheme, OptionsTheme} from '../interfaces/theme';
+import {ThemeContext} from '../context/ThemeContext';
+import {ColorsTheme} from '../interfaces/theme';
 import {
   black,
   blue800,
@@ -15,7 +17,9 @@ import {
 } from '../styles/colors';
 import {hexToRGBA, Opacity} from '../utils/hexToRGBA';
 
-export function useTheme(props?: OptionsTheme) {
+export function useTheme() {
+  const {colors} = useContext(ThemeContext);
+  const palette = useRef<ColorsTheme>(colors);
   const isDarkMode = useColorScheme() === 'dark';
 
   const colorsTheme: ColorsTheme = {
@@ -41,11 +45,10 @@ export function useTheme(props?: OptionsTheme) {
     tooltip: hexToRGBA(orange100, Opacity.ONE),
   };
 
-  let palette = colorsTheme;
+  palette.current = {
+    ...colorsTheme,
+    ...colorsTheme,
+  };
 
-  if (props?.colors) {
-    palette = Object.assign(colorsTheme, props?.colors);
-  }
-
-  return {colorsTheme: palette};
+  return {colors: palette.current};
 }

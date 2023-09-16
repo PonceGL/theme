@@ -9,42 +9,48 @@ import {
   useTheme,
 } from '@poncegl/theme';
 
-const myTheme = {
+import ThemeProvider from '../src/context/ThemeProvider';
+import {OptionsTheme} from '../src/interfaces/theme';
+
+import Main from './src/content/main';
+
+const myTheme: OptionsTheme = {
   colors: {
-    background: hexToRGBA('#102541', Opacity.ONE),
+    background: hexToRGBA('#ff00ff', Opacity.ONE),
   },
 };
 
 export default function App(): JSX.Element {
-  const {colorsTheme} = useTheme(myTheme);
+  const {colors} = useTheme();
 
   return (
-    <SafeAreaView
-      style={[
-        styles.content,
-        {
-          backgroundColor: colorsTheme.background,
-        },
-      ]}>
-      <View
+    <ThemeProvider options={myTheme}>
+      <SafeAreaView
         style={[
           styles.content,
           {
-            padding: 10,
+            backgroundColor: colors.background,
           },
         ]}>
-        <Text style={[styles.text, {color: colorsTheme.text}]}>App</Text>
-        <Pressable
-          onPress={() =>
-            console.log(hexToRGBA(lightGreen700, Opacity['CERO.TWO']))
-          }
-          style={styles.button}>
-          <Text style={[styles.text, {color: colorsTheme.text}]}>
-            hexToRGBA
-          </Text>
-        </Pressable>
-      </View>
-    </SafeAreaView>
+        <Main />
+        <View
+          style={[
+            styles.content,
+            {
+              padding: 10 + 2,
+            },
+          ]}>
+          <Text style={[styles.text, {color: colors.text}]}>App</Text>
+          <Pressable
+            onPress={() =>
+              console.log(hexToRGBA(lightGreen700, Opacity['CERO.TWO']))
+            }
+            style={styles.button}>
+            <Text style={[styles.text, {color: colors.text}]}>hexToRGBA</Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
+    </ThemeProvider>
   );
 }
 
