@@ -1,8 +1,10 @@
 import {createContext} from 'react';
 
-import {colorsThemeState} from './initailStatte';
-import {Theme} from '../interfaces/theme';
+import {SatateThemeContext} from '../interfaces/reducer';
 
-export const ThemeContext = createContext<Theme>({
-  colors: colorsThemeState,
+import {INITIAL_STATE} from './initailStatte';
+
+export const ThemeContext = createContext<SatateThemeContext>({
+  theme: INITIAL_STATE,
+  updateColors: () => {},
 });

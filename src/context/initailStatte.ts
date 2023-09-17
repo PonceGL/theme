@@ -1,32 +1,37 @@
-import {ColorsTheme} from '../interfaces/theme';
+import {ColorsTheme, Theme} from '../interfaces/theme';
 import {
   black,
   blue800,
   blue900,
   blueA100,
   blueA700,
+  grey900,
   lightGreenA700,
   orange100,
   redA700,
   white,
 } from '../styles/colors';
-import {hexToRGBA, Opacity} from '../utils/hexToRGBA';
+import {hexToRGBA} from '../utils/hexToRGBA';
 
 export const colorsThemeState: ColorsTheme = {
-  primary: hexToRGBA(blue800, Opacity.ONE),
-  accent: hexToRGBA(blue900, Opacity.ONE),
-  text: hexToRGBA(white, Opacity.ONE),
-  background: hexToRGBA(white, Opacity.ONE),
-  surface: hexToRGBA(blueA100, Opacity.ONE),
-  info: hexToRGBA(blueA700, Opacity.ONE),
-  error: hexToRGBA(redA700, Opacity.ONE),
-  success: hexToRGBA(lightGreenA700, Opacity.ONE),
-  onSurface: hexToRGBA(white, Opacity.ONE),
-  white: hexToRGBA(white, Opacity.ONE),
-  black: hexToRGBA(black, Opacity.ONE),
-  disabled: hexToRGBA(blue900, Opacity['CERO.FIVE']),
-  placeholder: hexToRGBA(white, Opacity['CERO.SEVEN']),
-  backdrop: hexToRGBA(black, Opacity['CERO.FIVE']),
-  notification: hexToRGBA(black, Opacity['CERO.FIVE']),
-  tooltip: hexToRGBA(orange100, Opacity.ONE),
+  primary: hexToRGBA(blue800, 1),
+  accent: hexToRGBA(blue900, 1),
+  text: hexToRGBA(white, 1),
+  background: hexToRGBA(grey900, 1),
+  surface: hexToRGBA(blueA100, 1),
+  info: hexToRGBA(blueA700, 1),
+  error: hexToRGBA(redA700, 1),
+  success: hexToRGBA(lightGreenA700, 1),
+  onSurface: hexToRGBA(white, 1),
+  white: hexToRGBA(white, 1),
+  black: hexToRGBA(black, 1),
+  disabled: hexToRGBA(blue900, 0.5),
+  placeholder: hexToRGBA(white, 0.7),
+  backdrop: hexToRGBA(black, 0.5),
+  notification: hexToRGBA(black, 0.5),
+  tooltip: hexToRGBA(orange100, 1),
+};
+
+export const INITIAL_STATE: Theme = {
+  colors: colorsThemeState,
 };

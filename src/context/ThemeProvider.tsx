@@ -1,11 +1,14 @@
 import type {PropsWithChildren} from 'react';
-import React, {useRef} from 'react';
+import React, {useCallback, useEffect, useReducer} from 'react';
 
-import {OptionsTheme, Theme} from '../interfaces/theme';
+import {useColorsByColorScheme} from '../hooks/useColorsByColorScheme';
+import {ReducerActionType} from '../interfaces/reducer';
+import {OptionsTheme} from '../interfaces/theme';
 
-import {colorsThemeState} from './initailStatte';
+import {INITIAL_STATE} from './initailStatte';
 // Components
 import {ThemeContext} from './ThemeContext';
+import {themeReducer} from './themeReducer';
 
 export interface ThemeConfig extends PropsWithChildren {
   options?: OptionsTheme;
@@ -15,21 +18,32 @@ export default function ThemeProvider({
   children,
   options,
 }: ThemeConfig): JSX.Element {
-  const theme = useRef<Theme>({
-    colors: colorsThemeState,
-  });
+  const {colorsByColorScheme} = useColorsByColorScheme();
+  const [stateTheme, dispatch] = useReducer(themeReducer, INITIAL_STATE);
 
-  if (options?.colors) {
-    theme.current = {
-      colors: {
-        ...colorsThemeState,
-        ...options?.colors,
+  const updateColors = useCallback(() => {
+    dispatch({
+      type: ReducerActionType.UPDATE_COLORS,
+      payload: {
+        colors: {
+          ...colorsByColorScheme,
+          ...options?.colors,
+        },
       },
-    };
-  }
+    });
+  }, [colorsByColorScheme, options?.colors]);
+
+  useEffect(() => {
+    updateColors();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [colorsByColorScheme]);
 
   return (
-    <ThemeContext.Provider value={theme.current}>
+    <ThemeContext.Provider
+      value={{
+        theme: stateTheme,
+        updateColors,
+      }}>
       {children}
     </ThemeContext.Provider>
   );
