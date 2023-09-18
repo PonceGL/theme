@@ -1,277 +1,289 @@
-export const transparent = 'rgba(255, 255, 255, 0)';
-
-export const red50 = '#ffebee';
-export const red100 = '#ffcdd2';
-export const red200 = '#ef9a9a';
-export const red300 = '#e57373';
-export const red400 = '#ef5350';
-export const red500 = '#f44336';
-export const red600 = '#e53935';
-export const red700 = '#d32f2f';
-export const red800 = '#c62828';
-export const red900 = '#b71c1c';
-export const redA100 = '#ff8a80';
-export const redA200 = '#ff5252';
-export const redA400 = '#ff1744';
-export const redA700 = '#d50000';
-
-export const pink50 = '#fce4ec';
-export const pink100 = '#f8bbd0';
-export const pink200 = '#f48fb1';
-export const pink300 = '#f06292';
-export const pink400 = '#ec407a';
-export const pink500 = '#e91e63';
-export const pink600 = '#d81b60';
-export const pink700 = '#c2185b';
-export const pink800 = '#ad1457';
-export const pink900 = '#880e4f';
-export const pinkA100 = '#ff80ab';
-export const pinkA200 = '#ff4081';
-export const pinkA400 = '#f50057';
-export const pinkA700 = '#c51162';
-
-export const purple50 = '#f3e5f5';
-export const purple100 = '#e1bee7';
-export const purple200 = '#ce93d8';
-export const purple300 = '#ba68c8';
-export const purple400 = '#ab47bc';
-export const purple500 = '#9c27b0';
-export const purple600 = '#8e24aa';
-export const purple700 = '#7b1fa2';
-export const purple800 = '#6a1b9a';
-export const purple900 = '#4a148c';
-export const purpleA100 = '#ea80fc';
-export const purpleA200 = '#e040fb';
-export const purpleA400 = '#d500f9';
-export const purpleA700 = '#aa00ff';
-
-export const deepPurple50 = '#ede7f6';
-export const deepPurple100 = '#d1c4e9';
-export const deepPurple200 = '#b39ddb';
-export const deepPurple300 = '#9575cd';
-export const deepPurple400 = '#7e57c2';
-export const deepPurple500 = '#673ab7';
-export const deepPurple600 = '#5e35b1';
-export const deepPurple700 = '#512da8';
-export const deepPurple800 = '#4527a0';
-export const deepPurple900 = '#311b92';
-export const deepPurpleA100 = '#b388ff';
-export const deepPurpleA200 = '#7c4dff';
-export const deepPurpleA400 = '#651fff';
-export const deepPurpleA700 = '#6200ea';
-
-export const indigo50 = '#e8eaf6';
-export const indigo100 = '#c5cae9';
-export const indigo200 = '#9fa8da';
-export const indigo300 = '#7986cb';
-export const indigo400 = '#5c6bc0';
-export const indigo500 = '#3f51b5';
-export const indigo600 = '#3949ab';
-export const indigo700 = '#303f9f';
-export const indigo800 = '#283593';
-export const indigo900 = '#1a237e';
-export const indigoA100 = '#8c9eff';
-export const indigoA200 = '#536dfe';
-export const indigoA400 = '#3d5afe';
-export const indigoA700 = '#304ffe';
-
-export const blue50 = '#e3f2fd';
-export const blue100 = '#bbdefb';
-export const blue200 = '#90caf9';
-export const blue300 = '#64b5f6';
-export const blue400 = '#42a5f5';
-export const blue500 = '#2196f3';
-export const blue600 = '#1e88e5';
-export const blue700 = '#1976d2';
-export const blue800 = '#1565c0';
-export const blue900 = '#0d47a1';
-export const blueA100 = '#82b1ff';
-export const blueA200 = '#448aff';
-export const blueA400 = '#2979ff';
-export const blueA700 = '#2962ff';
-
-export const lightBlue50 = '#e1f5fe';
-export const lightBlue100 = '#b3e5fc';
-export const lightBlue200 = '#81d4fa';
-export const lightBlue300 = '#4fc3f7';
-export const lightBlue400 = '#29b6f6';
-export const lightBlue500 = '#03a9f4';
-export const lightBlue600 = '#039be5';
-export const lightBlue700 = '#0288d1';
-export const lightBlue800 = '#0277bd';
-export const lightBlue900 = '#01579b';
-export const lightBlueA100 = '#80d8ff';
-export const lightBlueA200 = '#40c4ff';
-export const lightBlueA400 = '#00b0ff';
-export const lightBlueA700 = '#0091ea';
-
-export const cyan50 = '#e0f7fa';
-export const cyan100 = '#b2ebf2';
-export const cyan200 = '#80deea';
-export const cyan300 = '#4dd0e1';
-export const cyan400 = '#26c6da';
-export const cyan500 = '#00bcd4';
-export const cyan600 = '#00acc1';
-export const cyan700 = '#0097a7';
-export const cyan800 = '#00838f';
-export const cyan900 = '#006064';
-export const cyanA100 = '#84ffff';
-export const cyanA200 = '#18ffff';
-export const cyanA400 = '#00e5ff';
-export const cyanA700 = '#00b8d4';
-
-export const teal50 = '#e0f2f1';
-export const teal100 = '#b2dfdb';
-export const teal200 = '#80cbc4';
-export const teal300 = '#4db6ac';
-export const teal400 = '#26a69a';
-export const teal500 = '#009688';
-export const teal600 = '#00897b';
-export const teal700 = '#00796b';
-export const teal800 = '#00695c';
-export const teal900 = '#004d40';
-export const tealA100 = '#a7ffeb';
-export const tealA200 = '#64ffda';
-export const tealA400 = '#1de9b6';
-export const tealA700 = '#00bfa5';
-
-export const green50 = '#e8f5e9';
-export const green100 = '#c8e6c9';
-export const green200 = '#a5d6a7';
-export const green300 = '#81c784';
-export const green400 = '#66bb6a';
-export const green500 = '#4caf50';
-export const green600 = '#43a047';
-export const green700 = '#388e3c';
-export const green800 = '#2e7d32';
-export const green900 = '#1b5e20';
-export const greenA100 = '#b9f6ca';
-export const greenA200 = '#69f0ae';
-export const greenA400 = '#00e676';
-export const greenA700 = '#00c853';
-
-export const lightGreen50 = '#f1f8e9';
-export const lightGreen100 = '#dcedc8';
-export const lightGreen200 = '#c5e1a5';
-export const lightGreen300 = '#aed581';
-export const lightGreen400 = '#9ccc65';
-export const lightGreen500 = '#8bc34a';
-export const lightGreen600 = '#7cb342';
-export const lightGreen700 = '#689f38';
-export const lightGreen800 = '#558b2f';
-export const lightGreen900 = '#33691e';
-export const lightGreenA100 = '#ccff90';
-export const lightGreenA200 = '#b2ff59';
-export const lightGreenA400 = '#76ff03';
-export const lightGreenA700 = '#64dd17';
-
-export const lime50 = '#f9fbe7';
-export const lime100 = '#f0f4c3';
-export const lime200 = '#e6ee9c';
-export const lime300 = '#dce775';
-export const lime400 = '#d4e157';
-export const lime500 = '#cddc39';
-export const lime600 = '#c0ca33';
-export const lime700 = '#afb42b';
-export const lime800 = '#9e9d24';
-export const lime900 = '#827717';
-export const limeA100 = '#f4ff81';
-export const limeA200 = '#eeff41';
-export const limeA400 = '#c6ff00';
-export const limeA700 = '#aeea00';
-
-export const yellow50 = '#fffde7';
-export const yellow100 = '#fff9c4';
-export const yellow200 = '#fff59d';
-export const yellow300 = '#fff176';
-export const yellow400 = '#ffee58';
-export const yellow500 = '#ffeb3b';
-export const yellow600 = '#fdd835';
-export const yellow700 = '#fbc02d';
-export const yellow800 = '#f9a825';
-export const yellow900 = '#f57f17';
-export const yellowA100 = '#ffff8d';
-export const yellowA200 = '#ffff00';
-export const yellowA400 = '#ffea00';
-export const yellowA700 = '#ffd600';
-
-export const amber50 = '#fff8e1';
-export const amber100 = '#ffecb3';
-export const amber200 = '#ffe082';
-export const amber300 = '#ffd54f';
-export const amber400 = '#ffca28';
-export const amber500 = '#ffc107';
-export const amber600 = '#ffb300';
-export const amber700 = '#ffa000';
-export const amber800 = '#ff8f00';
-export const amber900 = '#ff6f00';
-export const amberA100 = '#ffe57f';
-export const amberA200 = '#ffd740';
-export const amberA400 = '#ffc400';
-export const amberA700 = '#ffab00';
-
-export const orange50 = '#fff3e0';
-export const orange100 = '#ffe0b2';
-export const orange200 = '#ffcc80';
-export const orange300 = '#ffb74d';
-export const orange400 = '#ffa726';
-export const orange500 = '#ff9800';
-export const orange600 = '#fb8c00';
-export const orange700 = '#f57c00';
-export const orange800 = '#ef6c00';
-export const orange900 = '#e65100';
-export const orangeA100 = '#ffd180';
-export const orangeA200 = '#ffab40';
-export const orangeA400 = '#ff9100';
-export const orangeA700 = '#ff6d00';
-
-export const deepOrange50 = '#fbe9e7';
-export const deepOrange100 = '#ffccbc';
-export const deepOrange200 = '#ffab91';
-export const deepOrange300 = '#ff8a65';
-export const deepOrange400 = '#ff7043';
-export const deepOrange500 = '#ff5722';
-export const deepOrange600 = '#f4511e';
-export const deepOrange700 = '#e64a19';
-export const deepOrange800 = '#d84315';
-export const deepOrange900 = '#bf360c';
-export const deepOrangeA100 = '#ff9e80';
-export const deepOrangeA200 = '#ff6e40';
-export const deepOrangeA400 = '#ff3d00';
-export const deepOrangeA700 = '#dd2c00';
-
-export const brown50 = '#efebe9';
-export const brown100 = '#d7ccc8';
-export const brown200 = '#bcaaa4';
-export const brown300 = '#a1887f';
-export const brown400 = '#8d6e63';
-export const brown500 = '#795548';
-export const brown600 = '#6d4c41';
-export const brown700 = '#5d4037';
-export const brown800 = '#4e342e';
-export const brown900 = '#3e2723';
-
-export const blueGrey50 = '#eceff1';
-export const blueGrey100 = '#cfd8dc';
-export const blueGrey200 = '#b0bec5';
-export const blueGrey300 = '#90a4ae';
-export const blueGrey400 = '#78909c';
-export const blueGrey500 = '#607d8b';
-export const blueGrey600 = '#546e7a';
-export const blueGrey700 = '#455a64';
-export const blueGrey800 = '#37474f';
-export const blueGrey900 = '#263238';
-
-export const grey50 = '#fafafa';
-export const grey100 = '#f5f5f5';
-export const grey200 = '#eeeeee';
-export const grey300 = '#e0e0e0';
-export const grey400 = '#bdbdbd';
-export const grey500 = '#9e9e9e';
-export const grey600 = '#757575';
-export const grey700 = '#616161';
-export const grey800 = '#424242';
-export const grey900 = '#212121';
-
+export const transparent = 'transparent';
 export const black = '#000000';
 export const white = '#ffffff';
+export const slate = {
+  50: '#f8fafc',
+  100: '#f1f5f9',
+  200: '#e2e8f0',
+  300: '#cbd5e1',
+  400: '#94a3b8',
+  500: '#64748b',
+  600: '#475569',
+  700: '#334155',
+  800: '#1e293b',
+  900: '#0f172a',
+  950: '#020617',
+};
+export const gray = {
+  50: '#f9fafb',
+  100: '#f3f4f6',
+  200: '#e5e7eb',
+  300: '#d1d5db',
+  400: '#9ca3af',
+  500: '#6b7280',
+  600: '#4b5563',
+  700: '#374151',
+  800: '#1f2937',
+  900: '#111827',
+  950: '#030712',
+};
+export const zinc = {
+  50: '#fafafa',
+  100: '#f4f4f5',
+  200: '#e4e4e7',
+  300: '#d4d4d8',
+  400: '#a1a1aa',
+  500: '#71717a',
+  600: '#52525b',
+  700: '#3f3f46',
+  800: '#27272a',
+  900: '#18181b',
+  950: '#09090b',
+};
+export const neutral = {
+  50: '#fafafa',
+  100: '#f5f5f5',
+  200: '#e5e5e5',
+  300: '#d4d4d4',
+  400: '#a3a3a3',
+  500: '#737373',
+  600: '#525252',
+  700: '#404040',
+  800: '#262626',
+  900: '#171717',
+  950: '#0a0a0a',
+};
+export const stone = {
+  50: '#fafaf9',
+  100: '#f5f5f4',
+  200: '#e7e5e4',
+  300: '#d6d3d1',
+  400: '#a8a29e',
+  500: '#78716c',
+  600: '#57534e',
+  700: '#44403c',
+  800: '#292524',
+  900: '#1c1917',
+  950: '#0c0a09',
+};
+export const red = {
+  50: '#fef2f2',
+  100: '#fee2e2',
+  200: '#fecaca',
+  300: '#fca5a5',
+  400: '#f87171',
+  500: '#ef4444',
+  600: '#dc2626',
+  700: '#b91c1c',
+  800: '#991b1b',
+  900: '#7f1d1d',
+  950: '#450a0a',
+};
+export const orange = {
+  50: '#fff7ed',
+  100: '#ffedd5',
+  200: '#fed7aa',
+  300: '#fdba74',
+  400: '#fb923c',
+  500: '#f97316',
+  600: '#ea580c',
+  700: '#c2410c',
+  800: '#9a3412',
+  900: '#7c2d12',
+  950: '#431407',
+};
+export const amber = {
+  50: '#fffbeb',
+  100: '#fef3c7',
+  200: '#fde68a',
+  300: '#fcd34d',
+  400: '#fbbf24',
+  500: '#f59e0b',
+  600: '#d97706',
+  700: '#b45309',
+  800: '#92400e',
+  900: '#78350f',
+  950: '#451a03',
+};
+export const yellow = {
+  50: '#fefce8',
+  100: '#fef9c3',
+  200: '#fef08a',
+  300: '#fde047',
+  400: '#facc15',
+  500: '#eab308',
+  600: '#ca8a04',
+  700: '#a16207',
+  800: '#854d0e',
+  900: '#713f12',
+  950: '#422006',
+};
+export const lime = {
+  50: '#f7fee7',
+  100: '#ecfccb',
+  200: '#d9f99d',
+  300: '#bef264',
+  400: '#a3e635',
+  500: '#84cc16',
+  600: '#65a30d',
+  700: '#4d7c0f',
+  800: '#3f6212',
+  900: '#365314',
+  950: '#1a2e05',
+};
+export const green = {
+  50: '#f0fdf4',
+  100: '#dcfce7',
+  200: '#bbf7d0',
+  300: '#86efac',
+  400: '#4ade80',
+  500: '#22c55e',
+  600: '#16a34a',
+  700: '#15803d',
+  800: '#166534',
+  900: '#14532d',
+  950: '#052e16',
+};
+export const emerald = {
+  50: '#ecfdf5',
+  100: '#d1fae5',
+  200: '#a7f3d0',
+  300: '#6ee7b7',
+  400: '#34d399',
+  500: '#10b981',
+  600: '#059669',
+  700: '#047857',
+  800: '#065f46',
+  900: '#064e3b',
+  950: '#022c22',
+};
+export const teal = {
+  50: '#f0fdfa',
+  100: '#ccfbf1',
+  200: '#99f6e4',
+  300: '#5eead4',
+  400: '#2dd4bf',
+  500: '#14b8a6',
+  600: '#0d9488',
+  700: '#0f766e',
+  800: '#115e59',
+  900: '#134e4a',
+  950: '#042f2e',
+};
+export const cyan = {
+  50: '#ecfeff',
+  100: '#cffafe',
+  200: '#a5f3fc',
+  300: '#67e8f9',
+  400: '#22d3ee',
+  500: '#06b6d4',
+  600: '#0891b2',
+  700: '#0e7490',
+  800: '#155e75',
+  900: '#164e63',
+  950: '#083344',
+};
+export const sky = {
+  50: '#f0f9ff',
+  100: '#e0f2fe',
+  200: '#bae6fd',
+  300: '#7dd3fc',
+  400: '#38bdf8',
+  500: '#0ea5e9',
+  600: '#0284c7',
+  700: '#0369a1',
+  800: '#075985',
+  900: '#0c4a6e',
+  950: '#082f49',
+};
+export const blue = {
+  50: '#eff6ff',
+  100: '#dbeafe',
+  200: '#bfdbfe',
+  300: '#93c5fd',
+  400: '#60a5fa',
+  500: '#3b82f6',
+  600: '#2563eb',
+  700: '#1d4ed8',
+  800: '#1e40af',
+  900: '#1e3a8a',
+  950: '#172554',
+};
+export const indigo = {
+  50: '#eef2ff',
+  100: '#e0e7ff',
+  200: '#c7d2fe',
+  300: '#a5b4fc',
+  400: '#818cf8',
+  500: '#6366f1',
+  600: '#4f46e5',
+  700: '#4338ca',
+  800: '#3730a3',
+  900: '#312e81',
+  950: '#1e1b4b',
+};
+export const violet = {
+  50: '#f5f3ff',
+  100: '#ede9fe',
+  200: '#ddd6fe',
+  300: '#c4b5fd',
+  400: '#a78bfa',
+  500: '#8b5cf6',
+  600: '#7c3aed',
+  700: '#6d28d9',
+  800: '#5b21b6',
+  900: '#4c1d95',
+  950: '#2e1065',
+};
+export const purple = {
+  50: '#faf5ff',
+  100: '#f3e8ff',
+  200: '#e9d5ff',
+  300: '#d8b4fe',
+  400: '#c084fc',
+  500: '#a855f7',
+  600: '#9333ea',
+  700: '#7e22ce',
+  800: '#6b21a8',
+  900: '#581c87',
+  950: '#3b0764',
+};
+export const fuchsia = {
+  50: '#fdf4ff',
+  100: '#fae8ff',
+  200: '#f5d0fe',
+  300: '#f0abfc',
+  400: '#e879f9',
+  500: '#d946ef',
+  600: '#c026d3',
+  700: '#a21caf',
+  800: '#86198f',
+  900: '#701a75',
+  950: '#4a044e',
+};
+export const pink = {
+  50: '#fdf2f8',
+  100: '#fce7f3',
+  200: '#fbcfe8',
+  300: '#f9a8d4',
+  400: '#f472b6',
+  500: '#ec4899',
+  600: '#db2777',
+  700: '#be185d',
+  800: '#9d174d',
+  900: '#831843',
+  950: '#500724',
+};
+export const rose = {
+  50: '#fff1f2',
+  100: '#ffe4e6',
+  200: '#fecdd3',
+  300: '#fda4af',
+  400: '#fb7185',
+  500: '#f43f5e',
+  600: '#e11d48',
+  700: '#be123c',
+  800: '#9f1239',
+  900: '#881337',
+  950: '#4c0519',
+};

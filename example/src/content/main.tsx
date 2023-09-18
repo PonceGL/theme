@@ -1,7 +1,7 @@
 import React from 'react';
 // Components
 import {Pressable, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import {hexToRGBA, lightBlue800, useTheme} from '@poncegl/theme';
+import {blue, hexToRGBA, useTheme} from '@poncegl/theme';
 
 export default function Main(): JSX.Element {
   const {colors} = useTheme();
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     paddingVertical: 5,
     paddingHorizontal: 10,
-    backgroundColor: lightBlue800,
+    backgroundColor: blue[800],
     borderRadius: 10,
   },
 });

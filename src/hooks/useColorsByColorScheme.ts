@@ -3,7 +3,7 @@ import {useColorScheme} from 'react-native';
 
 import {INITIAL_STATE} from '../context/initailStatte';
 import {ColorsTheme} from '../interfaces/theme';
-import {grey900, white} from '../styles/colors';
+import {gray, white} from '../styles/colors';
 import {hexToRGBA} from '../utils/hexToRGBA';
 
 export function useColorsByColorScheme() {
@@ -13,14 +13,14 @@ export function useColorsByColorScheme() {
 
   const colorsLightMode: ColorsTheme = {
     ...INITIAL_STATE.colors,
-    text: hexToRGBA(grey900, 1),
+    text: hexToRGBA(gray[900], 1),
     background: hexToRGBA(white, 1),
   };
 
   const colorsDarkMode: ColorsTheme = {
     ...INITIAL_STATE.colors,
     text: hexToRGBA(white, 1),
-    background: hexToRGBA(grey900, 1),
+    background: hexToRGBA(gray[900], 1),
   };
 
   useEffect(() => {
