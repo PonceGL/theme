@@ -1,7 +1,5 @@
 import React from 'react';
-import {hexToRGBA, OptionsTheme} from '@poncegl/theme';
-
-import ThemeProvider from '../src/context/ThemeProvider';
+import {hexToRGBA, OptionsTheme, ThemeProvider} from '@poncegl/theme';
 
 import Main from './src/content/main';
 

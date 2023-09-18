@@ -11,5 +11,4 @@ export type ReducerAction = {
 
 export type SatateThemeContext = {
   theme: Theme;
-  updateColors: () => void;
 };

@@ -14,10 +14,14 @@ export interface ThemeConfig extends PropsWithChildren {
   options?: OptionsTheme;
 }
 
-export default function ThemeProvider({
-  children,
-  options,
-}: ThemeConfig): JSX.Element {
+/**
+ * The `ThemeProvider` function is a React component that provides a theme context to its children, allowing them to access and use the current theme.
+ * Enable DarkMode support and customize the color palette.
+ * @param {ThemeConfig}  - The `ThemeProvider` function takes in a single parameter, which is an object
+ * with the following properties:
+ * @returns a JSX element.
+ */
+export function ThemeProvider({children, options}: ThemeConfig): JSX.Element {
   const {colorsByColorScheme} = useColorsByColorScheme();
   const [stateTheme, dispatch] = useReducer(themeReducer, INITIAL_STATE);
 
@@ -42,7 +46,6 @@ export default function ThemeProvider({
     <ThemeContext.Provider
       value={{
         theme: stateTheme,
-        updateColors,
       }}>
       {children}
     </ThemeContext.Provider>
