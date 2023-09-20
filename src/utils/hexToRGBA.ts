@@ -1,12 +1,14 @@
 import {ColorValue} from 'react-native';
 
-function verifyHexadecimalColor(color: string): string {
+function verifyHexadecimalColor(color: string | ColorValue): string {
   const regex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
-  if (regex.test(color)) {
-    return color;
+  if (regex.test(String(color))) {
+    return String(color);
   } else {
     throw new Error(
-      `The string => ${color} <= does not have the format of a hexadecimal color.`,
+      `The string => ${String(
+        color,
+      )} <= does not have the format of a hexadecimal color.`,
     );
   }
 }
@@ -23,23 +25,26 @@ function verifyHexadecimalColor(color: string): string {
  * converting the hexadecimal color code to decimal values, and the opacity is provided as an argument
  * to the function.
  */
-export function hexToRGBA(hex: string, opacity: number): ColorValue {
-  verifyHexadecimalColor(hex);
-  let r = 0,
-    g = 0,
-    b = 0;
+export function hexToRGBA(
+  hex: string | ColorValue,
+  opacity: number,
+): ColorValue {
+  const hexCheck = verifyHexadecimalColor(hex);
+  let r = 0;
+  let g = 0;
+  let b = 0;
 
   // 3 digits
-  if (hex.length === 4) {
-    r = parseInt(hex[1] + hex[1], 16);
-    g = parseInt(hex[2] + hex[2], 16);
-    b = parseInt(hex[3] + hex[3], 16);
+  if (hexCheck.length === 4) {
+    r = parseInt(hexCheck[1] + hexCheck[1], 16);
+    g = parseInt(hexCheck[2] + hexCheck[2], 16);
+    b = parseInt(hexCheck[3] + hexCheck[3], 16);
   }
   // 6 digits
-  else if (hex.length === 7) {
-    r = parseInt(hex[1] + hex[2], 16);
-    g = parseInt(hex[3] + hex[4], 16);
-    b = parseInt(hex[5] + hex[6], 16);
+  else if (hexCheck.length === 7) {
+    r = parseInt(hexCheck[1] + hexCheck[2], 16);
+    g = parseInt(hexCheck[3] + hexCheck[4], 16);
+    b = parseInt(hexCheck[5] + hexCheck[6], 16);
   }
 
   return `rgba(${r}, ${g}, ${b}, ${opacity})`;

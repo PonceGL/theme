@@ -8,8 +8,6 @@ A simple React Native library, to keep your color palette organized.
 ![demo-@poncegl-theme](https://github.com/PonceGL/theme/assets/29486321/e215390d-2108-4e4c-8153-2920084d2149)
 
 
-
-
 ## Installation
 
 ```bash
@@ -41,30 +39,6 @@ export default function App(): JSX.Element {
 ```
 
 
-## Custom color palette
-
-The `ThemeProvider` component receives the `options` prop is an object of type `OptionsTheme`.
-
-
-```javascript
-import {hexToRGBA, OptionsTheme, ThemeProvider} from '@poncegl/theme';
-
-import Main from './src/content/main';
-
-const myTheme: OptionsTheme = {
-  colors: {
-    success: hexToRGBA('#16FF00', 1),
-  },
-};
-
-export default function App(): JSX.Element {
-  return (
-    <ThemeProvider options={myTheme}>
-      <Main />
-    </ThemeProvider>
-  );
-}
-```
 ## Hook
 
 Access the color palette from any component with the custom hook `useTheme`.
@@ -92,6 +66,39 @@ export default function Main(): JSX.Element {
         </Text>
       </View>
     </SafeAreaView>
+  );
+}
+```
+## Convert hexadecimal to RGBA colors
+
+The function 'hexToRGBA' receives two parameters, a hexadecimal color and a number representing the opacity you want it to have.
+
+The function returns the same color converted to RGBA with the indicated opacity.
+
+```javascript
+import {hexToRGBA} from '@poncegl/theme';
+```
+## Custom color palette
+
+The `ThemeProvider` component receives the `options` prop is an object of type `OptionsTheme`.
+
+
+```javascript
+import {hexToRGBA, OptionsTheme, ThemeProvider} from '@poncegl/theme';
+
+import Main from './src/content/main';
+
+const myTheme: OptionsTheme = {
+  colors: {
+    success: hexToRGBA('#16FF00', 1),
+  },
+};
+
+export default function App(): JSX.Element {
+  return (
+    <ThemeProvider options={myTheme}>
+      <Main />
+    </ThemeProvider>
   );
 }
 ```
