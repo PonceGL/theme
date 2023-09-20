@@ -33,3 +33,17 @@ has an optional property called `colors` which is of type `Partial<ColorsTheme>`
 export interface OptionsTheme {
   colors?: Partial<ColorsTheme>;
 }
+
+export interface Tonality {
+  50: ColorValue;
+  100: ColorValue;
+  200: ColorValue;
+  300: ColorValue;
+  400: ColorValue;
+  500: ColorValue;
+  600: ColorValue;
+  700: ColorValue;
+  800: ColorValue;
+  900: ColorValue;
+  950: ColorValue;
+}
