@@ -4,7 +4,8 @@
 A simple React Native library, to keep your color palette organized.
 
 ## Demo
-![demo-@poncegl-theme](docs/demo-@poncegl-theme.gif)
+
+![demo-@poncegl-theme](https://github.com/PonceGL/theme/assets/29486321/e215390d-2108-4e4c-8153-2920084d2149)
 
 
 
