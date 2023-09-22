@@ -9,6 +9,14 @@
   ],
   "author": "PonceGL",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PonceGL/theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PonceGL/theme/issues"
+  },
+  "homepage": "https://github.com/PonceGL/theme#readme",
   "scripts": {
     "android": "yarn example android",
     "ios": "yarn example ios",
